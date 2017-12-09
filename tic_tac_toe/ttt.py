@@ -2,10 +2,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import time
 
-print('########################################################')
-print('This program will play tic tac toe and learn (hopefully)')
-print('########################################################')
-
 class tic_tac_toe():
 
     def __init__(self):
@@ -99,7 +95,7 @@ class tic_tac_toe():
 
 
     def play(self):
-
+        self.ask_for_first_move()
         for i in range(9):
             self.move()
             time.sleep(1)
@@ -112,9 +108,3 @@ class tic_tac_toe():
                 else:
                     print('It\'s a draw')
                 break
-
-game = tic_tac_toe()
-
-game.ask_for_first_move()
-
-game.play()
