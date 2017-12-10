@@ -1,7 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import time
-import ttt.tic_tac_toe
 
 def tic_tac_toe_fixed_ai(board,difficulty=0.5):
 
@@ -47,4 +46,4 @@ def tic_tac_toe_fixed_ai(board,difficulty=0.5):
     return choice
 
 
-game = tic_tac_toe()
+game = tic_tac_toe
